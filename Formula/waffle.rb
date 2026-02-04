@@ -5,21 +5,21 @@
 class Waffle < Formula
   desc "Decentralized marketplace for LLM tokens"
   homepage "https://github.com/waffle-protocol/waffle"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.2/waffle_0.1.2_darwin_amd64.tar.gz"
-      sha256 "3a7c50db57081abf303bf7a5595f93499a652caf92c493b01750d0656e95f3ca"
+      url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.3/waffle_0.1.3_darwin_amd64.tar.gz"
+      sha256 "bb068ebfd734eb180354fb600df8452a792a1a8993a3d4af0da0235b7ff43ade"
 
       def install
         bin.install "waffle"
       end
     end
     on_arm do
-      url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.2/waffle_0.1.2_darwin_arm64.tar.gz"
-      sha256 "3956559f2bc14bc6ce91c0a8745c3b82b2ff9e630149ac3d5e5b583a69d7a216"
+      url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.3/waffle_0.1.3_darwin_arm64.tar.gz"
+      sha256 "eedfa2ed1cdf3082d9820467a33ca7628b6429a66624aa08574e7db2be611819"
 
       def install
         bin.install "waffle"
@@ -30,8 +30,8 @@ class Waffle < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.2/waffle_0.1.2_linux_amd64.tar.gz"
-        sha256 "a64a88fba0ccd17b2461954dd9c3f5565f33be2160fec743fa3862d1ab22e2ac"
+        url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.3/waffle_0.1.3_linux_amd64.tar.gz"
+        sha256 "a6f4b77914c9a02d0948a1e856649260d180d77bff3c9d239dba224201eae83f"
 
         def install
           bin.install "waffle"
@@ -40,8 +40,8 @@ class Waffle < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.2/waffle_0.1.2_linux_arm64.tar.gz"
-        sha256 "b2d7d7dc82f39901b30ff5e2099f34871b4d9d90580632f626abd93dfa5945d0"
+        url "https://github.com/waffle-protocol/waffle-studio/releases/download/v0.1.3/waffle_0.1.3_linux_arm64.tar.gz"
+        sha256 "bef54fc2425d05126c4904b8e285f45b7643c463e7cc96abb96e1fd8747c402e"
 
         def install
           bin.install "waffle"
